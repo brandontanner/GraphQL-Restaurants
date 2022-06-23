@@ -11,7 +11,8 @@ This program demostrates how to create, read, update, and delete data using Grap
 3. Run `node index.js`.
 4. When that is complete, load **localhost:5500/graphql** in the browser. This will load the project in the browser.
 5. Paste the following on the left-hand side: 
-`mutation editrestaurants($idd: Int = 1, $name: String = "OLDO") {
+```
+mutation editrestaurants($idd: Int = 1, $name: String = "OLDO") {
   editrestaurant(id: $idd, name: $name) {
     name
     description
@@ -54,13 +55,16 @@ query findrestaurant($iidd:Int!) {
       price
     }
   }
-}`
+}
+```
 6. Paste the following on the left-hand side under **query variables**:
-`{
+```
+{
   "iid": 0,
   "idd": 0,
   "iidd": 1
-}`
+}
+```
 7. Run the program by clicking the play button at the top and clicking a query or mutation you would like to run.
 
 ### Roadmap of Future Improvements
